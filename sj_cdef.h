@@ -1,6 +1,12 @@
 #ifndef SJ_CDEF_H_INCLUDED
 #define SJ_CDEF_H_INCLUDED
 
+/*
+ * https://github.com/xfitgd/xfitgd/blob/main/sj_cdef.h
+ * contacts Discord seongjun456
+ * C personal def header made by Seong Jun, 2023/10/16
+ */
+
 #include <stdbool.h>
 #include <stdint.h>
 
