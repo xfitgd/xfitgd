@@ -4,7 +4,7 @@
 /*
  * https://github.com/xfitgd/xfitgd/blob/main/sj_cdef.h
  * contacts Discord seongjun456
- * C personal def header made by Seong Jun, 2023/10/16
+ * C personal def header made by Seong Jun, 2023/11/05
  */
 
 #include <stdbool.h>
@@ -44,12 +44,18 @@ TYPEDEF_STRUCT(BUFFER,
 #define _DLL_EXPORT
 #endif
 
+
+#define _ALWAYS_INLINE __attribute__((always_inline)) inline
+
 #define PACK1_STRUCT(name, content) \
   typedef struct {                 \
     content                        \
   } __attribute__((packed)) name;
 
 #elif defined(_MSC_VER)
+
+#define _ALWAYS_INLINE __forceinline
+
 #define _MSVC 1
 
 #define _DLL_IMPORT __declspec(dllimport)
