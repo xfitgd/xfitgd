@@ -122,3 +122,7 @@ TYPEDEF_STRUCT(BUFFER,
 #endif
 #endif
 
+
+#ifndef ARRAYSIZE
+#define ARRAYSIZE(a) (sizeof(a) / sizeof(*(a)))
+#endif
