@@ -4,7 +4,7 @@
 /*
  * https://github.com/xfitgd/xfitgd/blob/main/sj_cdef.h
  * contacts Discord seongjun456
- * C personal def header made by Seong Jun, 2023/11/05
+ * C personal def header made by Seong Jun, 2023/12/22
  */
 
 #include <stdbool.h>
@@ -143,7 +143,7 @@ inline bool replaceEx2(char* _filename, const char* _ex) {
   char* lastDot = strrchr(_filename, '.');  // 마지막 '.'의 위치 찾기
 
   if (lastDot != NULL) {     // '.'가 있는 경우
-    *lastDot = '\0';         // '.' 위치에 null character 삽입
+    *lastDot = '\0';         // '.' 위치에 null 문자 삽입
     strcat(_filename, _ex);  // 새로운 확장자 추가
     return true;
   }
