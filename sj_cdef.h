@@ -132,7 +132,7 @@ inline bool replaceEx(std::string& _filename, const std::string& _ex) {
   size_t lastDotIndex = _filename.rfind('.');  // 마지막 '.'의 위치 찾기
 
   if (lastDotIndex != std::string::npos) {  // '.'가 있는 경우
-    _filename.erase(lastDotIndex);          // '.' 이후의 모든 문자 제거
+    _filename.erase(lastDotIndex);          // '.' 부터 모든 문자 제거
     _filename += _ex;                       // 새로운 확장자 추가
     return true;
   }
