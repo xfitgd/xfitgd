@@ -129,7 +129,7 @@ TYPEDEF_STRUCT(BUFFER,
 #endif
 
 inline bool replaceEx(std::string& _filename, const std::string& _ex) {
-  size_t lastDotIndex = _filename.find_last_of(".");  // 마지막 '.'의 위치 찾기
+  size_t lastDotIndex = _filename.rfind('.');  // 마지막 '.'의 위치 찾기
 
   if (lastDotIndex != std::string::npos) {  // '.'가 있는 경우
     _filename.erase(lastDotIndex);          // '.' 이후의 모든 문자 제거
